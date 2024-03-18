@@ -23,9 +23,10 @@ module tt_um_ALU_DECODERS (
   // Concatenation of the uo_out and the required uio_out.
     assign MUX_out = {uo_out,uio_out[6:1]};
   // Instantiation of the main module
-    Proyecto_Final P_TOP (.CLK_in(clk), .Num_A_in(ui_in[7:5]), .Num_B_in(ui_in[4:2]), .Sel_A_in(ui_in[1:0]), .Sel_M_in(uio_in[7]), .Disp_out(MUX_out), .Disp_on_out(uio_out[0]));
+    Proyecto_Final P_TOP (.Num_A_in(ui_in[7:5]), .Num_B_in(ui_in[4:2]), .Sel_A_in(ui_in[1:0]), .Sel_M_in(uio_in[7]), .Disp_out(MUX_out));
 
   // Configuration of the in/out ports for the proyect.
     assign uio_oe = 8'b01111111; //uio_in[7] and uio_out[6:0].
     assign uio_out[7] = 1'b0;    //We used uio_in[7] as input.
+    assign uio_out[0] = 1'b0;    //We didn't used this output.
 endmodule
