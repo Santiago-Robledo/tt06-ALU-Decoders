@@ -42,7 +42,7 @@ module tb ();
   );
 //Generate stimulus for the inputs
    initial begin
-    //Verificación de los default
+    //Default Verification
     #1; 
     #1; ui_in [7:5] = 3'b111; ui_in [4:2] = 3'b111;
     //Octal Decoder
