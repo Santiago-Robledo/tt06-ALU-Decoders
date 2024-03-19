@@ -5,14 +5,14 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_ALU_DECODERS.v, ALU3B.v, Decod_Gray.v, Decod_Octal.v, Mux2_1_14b.v, Proyecto_Final.v
+PROJECT_SOURCES = tt_um_ALU_DECODERS.v
 
 
 ifneq ($(GATES),yes)
 
 # RTL simulation:
 SIM_BUILD				= sim_build/rtl
-VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
+VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES)) $(PWD)/tt_um_ALU_DECODERS.v $(PWD)/ALU3B.v $(PWD)/Decod_Gray.v $(PWD)/Decod_Octal.v $(PWD)/Mux2_1_14b.v $(PWD)/Proyecto_Final.v
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 else
