@@ -25,34 +25,34 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "Sel_A_in [0]"
+  ui[1]: "Sel_A_in [1]"
+  ui[2]: "Num_B_in [0]"
+  ui[3]: "Num_B_in [1]"
+  ui[4]: "Num_B_in [2]"
+  ui[5]: "Num_A_in [0]"
+  ui[6]: "Num_A_in [1]"
+  ui[7]: "Num_A_in [2]"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "Disp_out[6]"
+  uo[1]: "Disp_out[7]"
+  uo[2]: "Disp_out[8]"
+  uo[3]: "Disp_out[9]"
+  uo[4]: "Disp_out[10]"
+  uo[5]: "Disp_out[11]"
+  uo[6]: "Disp_out[12]"
+  uo[7]: "Disp_out[13]"
 
   # Bidirectional pins
   uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[1]: "Disp_out[0]"
+  uio[2]: "Disp_out[1]"
+  uio[3]: "Disp_out[2]"
+  uio[4]: "Disp_out[3]"
+  uio[5]: "Disp_out[4]"
+  uio[6]: "Disp_out[5]"
+  uio[7]: "Sel_M_in"
 
 # Do not change!
 yaml_version: 6
