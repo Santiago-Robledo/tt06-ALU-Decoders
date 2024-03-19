@@ -5,12 +5,8 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_ALU_DECODERS.v
-PROJECT_SOURCES = ALU3B.v
-PROJECT_SOURCES = Decod_Gray.v
-PROJECT_SOURCES = Decod_Octal.v
-PROJECT_SOURCES = Mux2_1_14b.v
 PROJECT_SOURCES = Proyecto_Final.v
+
 
 ifneq ($(GATES),yes)
 
