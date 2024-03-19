@@ -44,17 +44,30 @@ module tb ();
    initial begin
     //Verificación de los default
     #1; 
-    #1; Num_A_in = 3'b111; Num_B_in = 3'b111;
-    //Decodificador Octal
-    #1; Sel_A_in = 2'd0; Sel_M_in = 1'b0;
-    #1; Sel_A_in = 2'd1;
-    #1; Sel_A_in = 2'd2;
-    #1; Sel_A_in = 2'd3;
-    //Decodificador Gray
-    #1; Sel_A_in = 2'd0; Sel_M_in = 1'b1;
-    #1; Sel_A_in = 2'd1;
-    #1; Sel_A_in = 2'd2;
-    #1; Sel_A_in = 2'd3;
+    #1; ui_in [7:5] = 3'b111; ui_in [4:2] = 3'b111;
+    //Octal Decoder
+    #1; ui_in [1:0] = 2'd0; uio_in[7] = 1'b0;
+    #1; ui_in [1:0] = 2'd1;
+    #1; ui_in [1:0] = 2'd2;
+    #1; ui_in [1:0] = 2'd3;
+    //Gray Decoder
+    #1; ui_in [1:0] = 2'd0; uio_in[7] = 1'b1;
+    #1; ui_in [1:0] = 2'd1;
+    #1; ui_in [1:0] = 2'd2;
+    #1; ui_in [1:0] = 2'd3;
+    // New numbers as Input
+    #1; ui_in [7:5] = 3'b101; ui_in [4:2] = 3'b011;
+    //Octal Decoder
+    #1; ui_in [1:0] = 2'd0; uio_in[7] = 1'b0;
+    #1; ui_in [1:0] = 2'd1;
+    #1; ui_in [1:0] = 2'd2;
+    #1; ui_in [1:0] = 2'd3;
+    //Gray Decoder
+    #1; ui_in [1:0] = 2'd0; uio_in[7] = 1'b1;
+    #1; ui_in [1:0] = 2'd1;
+    #1; ui_in [1:0] = 2'd2;
+    #1; ui_in [1:0] = 2'd3;
+      
     //Parar simulación
     #100;
     $stop;
