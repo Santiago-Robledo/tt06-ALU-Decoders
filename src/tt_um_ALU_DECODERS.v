@@ -20,10 +20,12 @@ module tt_um_ALU_DECODERS (
     
   // Wire auxiliary variables signals for concatenation.
     wire [13:0] MUX_out; // General vector for the exit of our proyect.
-  // Concatenation of the uo_out and the required uio_out.
-    assign MUX_out = {uo_out,uio_out[6:1]};
+    
   // Instantiation of the main module
     Proyecto_Final P_TOP (.Num_A_in(ui_in[7:5]), .Num_B_in(ui_in[4:2]), .Sel_A_in(ui_in[1:0]), .Sel_M_in(uio_in[7]), .Disp_out(MUX_out));
+
+    // Assigning the auxiliary wire to the corresponding outputs.
+    assign {uo_out,uio_out[6:1]} = MUX_out;
 
   // Configuration of the in/out ports for the proyect.
     assign uio_oe = 8'b01111111; //uio_in[7] and uio_out[6:0].
