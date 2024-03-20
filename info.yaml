@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "ALU with a Gray and Octal decoders"      # Project title
-  author:       "Luis Antonio Santos Quesada, Santiago Robledo Acosta"      # Your name
+  author:       "Luis Antonio Quezada Santos, Santiago Robledo Acosta, José Miguel Rocha Pérez"      # Your name
   discord:      "ultraspyro"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "This is a simple 3 bit ALU with 4 operations: Substraction, Addition, XOR and AND which its output is conected to an Octal and Gray Decoders."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
