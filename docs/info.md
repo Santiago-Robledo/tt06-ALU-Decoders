@@ -29,7 +29,7 @@ In order to test this device, you will need to input the numbers to the pin wher
 
 ## External hardware
 
-For external hardwar you'll need:
+For external hardware you'll need:
 . An external DC power source.
 . 14 330 ohms resistors.
 . 2 7 segments displays common cathode.
